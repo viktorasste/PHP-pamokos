@@ -9,9 +9,12 @@
     
 </head>
 <body>
-    <form action="index.php" method="post">
-        <input type="text" name="spalva">
-         <button type="submit" name="veiksmas">Nuspalvink</button>
+    <form action="index.php" method="get">
+        <input name="skaitiklis1">
+        <input name="vardiklis1">
+        <input name="skaitiklis2">
+        <input name="vardiklis">
+         <button type="submit" name="sudeti" >Sudek</button>
 
 </form>
 
