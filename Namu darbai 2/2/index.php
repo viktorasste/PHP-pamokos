@@ -9,7 +9,7 @@
     
 </head>
 <body>
-    <form action="get.php" method="get">
+    <form action="index.php" method="post">
         <input type="text" name="spalva">
          <button type="submit" name="veiksmas">Nuspalvink</button>
 
