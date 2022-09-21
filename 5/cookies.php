@@ -12,13 +12,22 @@
     if(!isset($_COOKIE["skaitiklis"])){
 
     
-    setcookie("skaitiklis", 1, time()+3*3600);
-
+    setcookie("skaitiklis", 0, time()+3*3600);
+        $i = 0;
+    }
+            else{
+                $i = $_COOKIE["skaitiklis"];
+                $i++;
+                setcookie("skaitiklis", time()+3*3600);
+            }
+        }
     // setcookie("skaitiklis", "", time()-3600); trina sausainuka
     
     // echo $_COOKIE["skaitiklis"];
 }
-        $i = 0;
+
+
+        $i = $_COOKIE["skaitiklis"];
         $i++;
         echo $i;
 
