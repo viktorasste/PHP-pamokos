@@ -43,3 +43,22 @@ echo "<br>";
 echo $kate->svoris;
 echo $kate->kojuSkaicius;
 echo $kate->begti();
+
+
+//////////////////////////////////////////////////////
+/////keliu lygiu paveldimumas////////////////////////
+//////////////////////////////////////////////////////
+
+
+class Kompiuteris{
+    public $spalva;
+    public $rusis;
+    public $ekranoDydis;
+    public $ekranoSpalva;
+    public $ekranoRezoliucija;
+
+
+    
+
+
+}
