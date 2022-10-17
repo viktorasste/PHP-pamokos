@@ -1,23 +1,27 @@
 
 <?php 
 //a.
-$skaicius1 = 15;
-$skaicius2 = 7;
-$skaicius3 = 28;
-$skaicius4 = 13;
+// $skaicius1 = 10;
+$a = 10;
+$b = 15;
+$c = 12;
+$d = 8;
+// $skaicius2 = 15;
+// $skaicius3 = 12;
+// $skaicius4 = 8;
 
 
 //b.
-echo "<div>$skaicius1</div>";
-echo "<div>$skaicius2</div>";
-echo "<div>$skaicius3</div>";
-echo "<div>$skaicius4</div>";
+echo "<div>$a</div>";
+echo "<div>$b</div>";
+echo "<div>$c</div>";
+echo "<div>$d</div>";
 
-$suma = $skaicius1 + $skaicius2 + $skaicius3 + $skaicius4;
+$suma = $a + $b + $c + $d;
 
 echo "<div>Suma: $suma</div>";
 
-$sandauga = $skaicius1 * $skaicius2 * $skaicius3 * $skaicius4;
+$sandauga = $a * $b * $c * $d;
 
 echo "<div>Sandauga: $sandauga</div>";
 
@@ -26,31 +30,31 @@ echo "<div>Sandauga: $sandauga</div>";
 //c. 
 $laikinasisKintamasis = 0;
 
-$laikinasisKintamasis = $skaicius1;
+$laikinasisKintamasis = $a;
 
-$skaicius1 = $skaicius2;
+$a = $b;
 
-$skaicius2 = $laikinasisKintamasis;
+$b = $laikinasisKintamasis;
 
 
 
 
 //d. 
 
-$skaicius3 = $skaicius3 + $skaicius4;
+$c = $c + $d;
 
-$skaicius4 = $skaicius3 - $skaicius4;
-$skaicius3 = $skaicius3 - $skaicius4; 
+$d = $c - $d;
+$c = $c - $d; 
 
 //e.
-echo "<p>$skaicius1 $skaicius2 $skaicius3 $skaicius4</p>";
+echo "<p>$a $b $c $d</p>";
 
 //f.
 
 // $maxSkaicius = PHP_FLOAT_MAX;
-$maxSkaicius1 = PHP_INT_MAX;
+$maxSkaicius = PHP_INT_MAX;
 // echo "<h1>$maxSkaicius</h1>";
-echo "<h1>$maxSkaicius1</h1>";
+echo "<h1>$maxSkaicius</h1>";
 
 
 
