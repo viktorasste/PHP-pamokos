@@ -55,7 +55,7 @@ header{
     /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%);  */
    
 }
-img{
+.logo_pic{
     width: 26%;
     float: left;
    /* border: 1px;
@@ -63,4 +63,22 @@ img{
    border-style: solid; */
    box-shadow: 2px 2px 10px;
    margin-top: 21px;
+}
+.carousel_pic{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: aqua;
+    box-shadow: 2px 2px 10px;
+
+}
+
+.carousel_vezim{
+    width: 500px;
+    height: 500px;
+}
+
+.form_uzsakymo{
+    width: 500px;
+    height: auto;
 }
