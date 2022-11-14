@@ -98,3 +98,18 @@ WHERE
   _1lygis.parent_id = 0 
 ORDER BY 
   _1lygis.id DESC;
+  
+  2. SELECT 
+  _1lygis.name AS _1lygis, 
+  _2lygis.name as _2lygis, 
+  _3lygis.name as _3lygis 
+ 
+FROM 
+  categories AS _1lygis 
+  LEFT JOIN categories AS _2lygis ON _2lygis.parent_id = _1lygis.id 
+  LEFT JOIN categories AS _3lygis ON _3lygis.parent_id = _2lygis.id 
+ 
+WHERE 
+  _1lygis.parent_id = 0 
+ORDER BY 
+  _1lygis.id DESC;
