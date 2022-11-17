@@ -1,0 +1,58 @@
+3.
+
+SELECT bam.lastName, bam.firstName, (SELECT country FROM offices WHERE officeCode=bam.officeCode) as country
+FROM employees bam
+WHERE bam.officeCode IN (SELECT officeCode FROM offices WHERE country='USA');
+
+arba
+
+SELECT lastName, firstName,
+'USA' as country
+FROM employees
+WHERE officeCode IN (SELECT officeCode FROM offices WHERE country='USA');
+
+4.
+
+SELECT 
+customerNumber as cN,
+(SELECT customerName FROM customers WHERE customerNumber = cN) as customerName,
+checkNumber,
+amount
+FROM payments
+WHERE amount=(SELECT MAX(amount) FROM payments);
+
+5.
+
+SELECT customerNumber AS cN, (SELECT customerName FROM customers WHERE customerNumber=cN) as customerName, checkNumber, amount, (SELECT AVG(amount) FROM payments) as average FROM payments WHERE amount > (SELECT AVG(amount) FROM payments);
+
+6.
+
+
+SELECT customerName,
+	'no Orders' as noOrders
+FROM customers 
+WHERE customerNumber 
+NOT IN (SELECT DISTINCT customerNumber FROM `orders`);
+
+7.
+
+SELECT 
+'Prekiu pozicijos uzsakymuose' as Title,
+	MAX(items) as Max_,
+    MIN(items) as Min_,
+    ROUND (AVG(items),0) as Avg_
+FROM
+(SELECT orderNumber,COUNT(orderNumber) AS items 
+FROM orderdetails
+GROUP BY orderNumber) as t1;
+
+8.
+
+
+SELECT
+	productName,
+    buyPrice,
+    (SELECT AVG(buyPrice) FROM products WHERE productLine=p1.productLine) AS Avg_in_each_line,
+    (SELECT productLine FROM productlines WHERE productLine=p1.productLine) as ProductLineName
+FROM products AS p1
+WHERE buyPrice > (SELECT AVG(buyPrice) FROM products WHERE productLine=p1.productLine);
