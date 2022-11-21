@@ -7,6 +7,7 @@
 } */
 body{
     background-color: #eaeaea;
+    /* background-color: black; !important */
 }
 a, p{
     text-decoration: none;
@@ -38,9 +39,16 @@ li{
     /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%);  */
 }
 header{
-    background-image: url(https://scontent.fvno2-1.fna.fbcdn.net/v/t39.30808-6/300642445_519483293465175_3573586539729186628_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=myRhemevZrkAX9KL58r&_nc_ht=scontent.fvno2-1.fna&oh=00_AT9rqGUcfJDi-oNReqlo7IfFjCuOb4LtZLAD-Z9L6eOXGQ&oe=635C0EEA);
+    background-image: url(pic/300642445_519483293465175_3573586539729186628_n.jpg);
     height: 312px;
     text-align: center;
+
+
+    /* url(https://scontent.fvno2-1.fna.fbcdn.net/v/t39.30808-6/300642445_519483293465175_3573586539729186628_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=E913Ph76tsAAX_jIJvz&_nc_ht=scontent.fvno2-1.fna&oh=00_AfBUqoBWDzaP-lU1U0Hjh_doZwYF2Fvh3GqgJlU5l-sqoQ&oe=637FA76A); */
+
+
+
+
 }
 .main{
     width: 1024px;
@@ -49,7 +57,8 @@ header{
     /* border-width: 1px;
     border-style: solid;
     border-color: black; */
-    background-color: #fff;
+    background-color: #125688 ;
+    /* background-color: #eaeaea; */
     box-shadow: 2px 2px 10px;
 
     /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%);  */
@@ -82,3 +91,70 @@ header{
     width: 500px;
     height: auto;
 }
+
+footer{
+/*     
+    background-image: url(/pic/37109683_497057980728966_5882469057793359872_n.jpg);
+   background-size: 80%;
+   background-position: 55%; */
+   background-color: #125688 ;
+    /* background-color: #737380; */
+    width: 1024px;
+    height: 200px;
+    margin: 25px auto;
+    /* border-width: 1px;
+    border-style: solid;
+    border-color: black; */
+    /* background-color: #eaeaea; */
+    box-shadow: 2px 2px 10px;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    
+    text-align: center;
+    text-decoration: none;
+    
+    
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #8a3ab9;
+    color: white;
+  }
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  .fa_social{
+    
+    margin-left: 400px;
+    padding-top: 30px;
+    align-items: center;
+  }
+
+  .copyright{
+    padding-top: 50px;
+    margin-left: 340px;
+  }
+
+  .footpic{
+    margin:  0 auto;
+  }
