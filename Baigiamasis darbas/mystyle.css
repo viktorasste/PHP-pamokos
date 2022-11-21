@@ -57,9 +57,10 @@ header{
     /* border-width: 1px;
     border-style: solid;
     border-color: black; */
-    background-color: #125688 ;
+    /* background-color: #125688 ; */
     /* background-color: #eaeaea; */
     box-shadow: 2px 2px 10px;
+    background-image: url(pic/66199600_712644059170356_1051043127999070208_n.jpg);
 
     /* box-shadow: 0 2px 4px rgb(0 0 0 / 10%);  */
    
@@ -86,16 +87,23 @@ header{
     width: 500px;
     height: 500px;
 }
+.input-group{
+    padding-top: 20px;
+    /* margin-top: 10px; */
+    padding-left: 300px;
 
-.form_uzsakymo{
-    width: 500px;
-    height: auto;
 }
 
+/* #form_uzsakymo{
+    
+    width: 500px;
+    height: auto; */
+
+
 footer{
-/*     
-    background-image: url(/pic/37109683_497057980728966_5882469057793359872_n.jpg);
-   background-size: 80%;
+    
+    background-image: url(/pic/66199600_712644059170356_1051043127999070208_n.jpg);
+   /* background-size: 80%;
    background-position: 55%; */
    background-color: #125688 ;
     /* background-color: #737380; */
